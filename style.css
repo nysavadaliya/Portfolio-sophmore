@@ -1,4 +1,4 @@
-/* ── Base ── */
+/* ── Base ──  used ai  */
 :root {
   --dark:        #0f0f17;
   --dark-2:      #13131f;
@@ -40,7 +40,7 @@ code {
   border-radius: 4px;
 }
 
-/* ── Navbar ── */
+/* ── Navbar ── got from previosu website*/
 #mainNav {
   background: var(--dark);
   border-bottom: 1px solid var(--border);
@@ -82,7 +82,7 @@ code {
 .navbar-toggler { border-color: var(--border); }
 .navbar-toggler-icon { filter: invert(1) opacity(0.6); }
 
-/* ── Hero ── */
+/* ── Hero ── stylign inspo framework was made by claude */
 .hero-section {
   position: relative;
   background: var(--dark);
@@ -207,7 +207,8 @@ code {
   margin: 0;
 }
 
-/* Hint text under Projects heading */
+
+
 .section-hint {
   font-size: 13px;
   color: var(--text-muted);
@@ -304,7 +305,7 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  align-items: start; /* so expanding a card doesn't stretch siblings */
+  align-items: start; 
 }
 
 /* ── Project Card ── */
@@ -335,7 +336,7 @@ code {
   transform: translateY(-2px);
 }
 
-/* Expanded state — highlight border, no scale */
+/* Expanded state --> highlight border, no scale */
 .project-card.expanded {
   border-color: var(--accent);
   box-shadow: 0 12px 40px rgba(123, 140, 222, 0.15);
@@ -467,7 +468,7 @@ code {
 .project-link:hover { opacity: 0.7; color: var(--accent); }
 
 /* ── Expand panel ── */
-/* Hidden by default using max-height + overflow for smooth animation */
+
 .project-extra {
   max-height: 0;
   overflow: hidden;

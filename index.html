@@ -471,22 +471,23 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  // Only "This Year" cards are expandable (those without .no-expand)
+  //used AI to learn how to expand and collapse the project cards, and then added a smooth scroll into view when expanding so the content is front and center. 
+  //expaning this year
   document.querySelectorAll('.project-card:not(.no-expand)').forEach(card => {
     card.addEventListener('click', e => {
-      // Don't expand when clicking a link inside the card
+      // don't expand when clicking a link inside the card
       if (e.target.closest('a')) return;
 
       const isExpanded = card.classList.contains('expanded');
 
-      // Close any other open cards first
+      //close any other open cards first
       document.querySelectorAll('.project-card.expanded').forEach(open => {
         open.classList.remove('expanded');
       });
 
       if (!isExpanded) {
         card.classList.add('expanded');
-        // Smooth scroll so expanded card is visible
+        //smooth scroll
         setTimeout(() => {
           card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }, 50);
